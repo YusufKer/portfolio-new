@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {ShowContactProvider} from "./showContactContext"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ShowContactProvider>
+      <App />
+    </ShowContactProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
