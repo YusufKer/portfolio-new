@@ -1,5 +1,4 @@
 import React,{useState} from "react"
-import "./projects.css"
 import Nav from "./Nav"
 import projectsData from "../projectsData"
 import DisplayProject from "./DisplayProject"

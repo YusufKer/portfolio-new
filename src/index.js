@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {ShowContactProvider} from "./showContactContext"
+import {BrowserRouter as Router} from "react-router-dom"
 
 ReactDOM.render(
   <React.StrictMode>
     <ShowContactProvider>
+      <Router>
       <App />
+      </Router>
     </ShowContactProvider>
   </React.StrictMode>,
   document.getElementById('root')
