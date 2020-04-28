@@ -9,16 +9,15 @@ import Projects from "./Components/Projects"
 import Contact from "./Components/Contact"
 
 function App() {
-
   return (
-        <div className="App">
-          <Contact/>
-          <Switch>
-              <Route exact path="/" component={Home}></Route>
-              <Route path="/about" component={About}></Route>
-              <Route path="/projects" component={Projects}></Route>
-          </Switch>
-        </div>
+    <div className="App">
+      <Contact/>
+      <Switch>
+          <Route exact path="/" component={Home}></Route>
+          <Route path="/about" component={About}></Route>
+          <Route path="/projects" component={Projects}></Route>
+      </Switch>
+    </div>
   )
 }
 
